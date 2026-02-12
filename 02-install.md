@@ -146,7 +146,7 @@ Know that you have the commands to install packages, you
 4. The SRA tools from NCBI. We will want `fastqdump` and
    `prefetch` to download sequences from the SRA.
    - Mac `sratoolkit`
-   - Debian based Linux it should be `ncbi-tools-bin`
+   - Debian based Linux it should be `sra-toolkit`
 5. For Mac, download less (better then the default more
    on Mac)
 
