@@ -8,7 +8,8 @@ Learn how to use tmux to split terminals, detach sessions,
 Multiplexers allow you to split a single terminal into
   multiple terminals. This allows you to have your notes
   on one half of the terminal and you analysis on the
-  other side. Making your life much more easy.
+  other side. They have made my life more easy. I hope
+  they can do the same for you.
 
 Often times a multiplexer will include a copy and paste
   buffer. This can be used to view your history or copy
