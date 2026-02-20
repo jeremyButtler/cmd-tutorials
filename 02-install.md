@@ -135,6 +135,9 @@ Know that you have the commands to install packages, you
   should install some programs we will use in the future.
 
 1. flye (denovo [no reference] assembler)
+   - For Linux, I have had issues with the package manager
+     not installing everything (fly-samtools). So, we may
+     install this from source later.
 2. kraken2 (read classifier [what species/family do the
    reads belong to])
    - Some pre-built databases for kraken2 can be found at

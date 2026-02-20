@@ -109,6 +109,9 @@ When ONT (Nanopore) finds the mean quality score they
   gives a quality score then taking the mean of all
   scores.
 
+Also ONT often trims off the first 60 bases. The first
+  60 base in a read are often very low quality.
+
 | q-score | number reads (ONT) | number reads (mean) |
 |:--------|:-------------------|:--------------------|
 | 7       |     3              |      0              |
