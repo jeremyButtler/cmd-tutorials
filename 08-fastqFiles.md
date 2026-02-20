@@ -175,12 +175,12 @@ You should never need to jump into the middle of a fastq
   done anything that breaks these patterns.
 
 1. A line with a single `+` means you are on the spacer
-  entry
-  - Move back till you find a line with a `@`
+   entry
+   - Move back till you find a line with a `@`
 2. A line with a `+` at the start and a space or tab means
    you are on the spacer entry
-  - Move back till you find a line with a `@`
-  - `+ some_data` (SRA does this)
+   - Move back till you find a line with a `@`
+   - `+ some_data` (SRA does this)
 3. A line with a `@` at the start and a space or tab means
    you are on the header entry
    - `@read_id some meta data`
