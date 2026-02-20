@@ -66,9 +66,11 @@ From others I have learned that control t is not often
   used as a keybinding in most programs. So, it is a
   mostly safe key to use as an escape key.
 
-### My tmux configuration
+## tmux
 
-For tmux my configuration file looks like.
+### tmux config file
+
+Here is my tmux configuration file (`~/.tmux.conf`)
 
 ```
 unbind C-b              # remove the control b key binding
@@ -84,31 +86,7 @@ bind C-t send-prefix    # have control t control t send a
 set-option -g mode-keys vi
 ```
 
-### My old screen configuration
-
-For screen this was my old configuration file.
-
-```
-# Change escape key to ctrl-t
-escape ^Tt
-bindkey "\024" command
-
-# key bindings allowing you to jump between windows
-bind k focus up
-bind j focus down
-bind h focus left
-bind l focus right
-
-# remove start up message
-startup_message off
-
-# Set up hard status line (date/time/terminals). I found
-#   this command on stack overflow
-hardstatus alwayslastline
-hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
-```
-
-## tmux
+### using tmux
 
 You can start a tmux session with tmux.
 
@@ -139,6 +117,32 @@ To detach a tmux session do `C-t C-d`. To reattach a
   session do `tmux attach`.
 
 ## screen
+
+### screen config file
+
+Here is my screen configuration file (`~/.screenrc`)
+
+```
+# Change escape key to ctrl-t
+escape ^Tt
+bindkey "\024" command
+
+# key bindings allowing you to jump between windows
+bind k focus up
+bind j focus down
+bind h focus left
+bind l focus right
+
+# remove start up message
+startup_message off
+
+# Set up hard status line (date/time/terminals). I found
+#   this command on stack overflow
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+```
+
+### using screen
 
 You can start a screen session using screen.
 
