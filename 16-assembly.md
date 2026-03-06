@@ -17,6 +17,8 @@ At this point we have take a fastq file of unknown reads
   their own. We need to take further steps to find convert
   this group of reads into something we can understand.
 
+## A couple ways to inspect reads
+
 Most of the reads in our bins are likely (we hope) from
   the same species and are likely from clones. This means
   that they will have the same genome (or very few
@@ -66,10 +68,13 @@ I have not worked much with vcf files, so I have no
   examples. My methods often use my own file formats that
   include both variants and matches to the reference.
 
-An assembly is a method that merges reads together (makes
-  a contig) to get a genome (or larger fragment of a
-  genome). These contigs are often converted into a
-  consensus.
+## The assembly way
+
+The method we have to convert a bin of reads to a
+  consensus is to make an assembly. An assembly is a
+  method that merges reads together (makes a contig) to
+  get a genome (or larger fragment of a genome). These
+  contigs are often converted into a consensus.
 
 For our project our next step is to take our bins of
   reads and make an assembly. I can think of two ways to do
@@ -81,7 +86,6 @@ For our project our next step is to take our bins of
 2. Reference based assemblies: the reads are mapped to a
    reference and the alignment is used to build a
    consensus sequence
-
 
 ## Denovo assembly
 
