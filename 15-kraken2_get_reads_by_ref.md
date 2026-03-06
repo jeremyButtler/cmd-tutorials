@@ -244,4 +244,4 @@ You should also know how to map reads and removed unmapped
          https://broadinstitute.github.io/picard/explain-flags.html).
 
 To see how my notes look by the end of this tutorial see
-  the 14-kraken2\_get\_reads\_by\_ref-notebook.md file.
+  the 15-kraken2\_get\_reads\_by\_ref-notebook.md file.
