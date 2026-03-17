@@ -66,7 +66,7 @@ cd flye;
 make;
 
 # install flye in your computer
-sudo python setup.py install;
+sudo python3 setup.py install;
 ```
 
 # Using flye
