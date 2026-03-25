@@ -135,6 +135,10 @@ flye \
     --meta \
     --nano-raw 03-k2-reads/03-zymo-k2viral-k2Taxa-186777-Muvirus-seqById.fq \
     --out-dir del;
+mv \
+    del/assembly.fa \
+    05-flye-k2Pull/05-zymo-k2viral-k2Taxa-186777-Muvirus-seqById-flye.fa;
+rm -r del; # I am removing the other files flye made
 ```
 
 Here is my example for the reads I pulled from kraken2
@@ -148,6 +152,10 @@ flye \
     --meta \
     --nano-raw 04-k2-readsByRef/04-zymo-k2-map-NC_000929.1.fq \
     --out-dir del;
+mv \
+    del/assembly.fa \
+    06-flye-refBin/06-zymo-k2-map-NC000929-flye.fa;
+rm -r del; # I am removing the other files flye made
 ```
 
 # Final thoughts
