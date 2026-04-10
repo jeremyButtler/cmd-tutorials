@@ -348,7 +348,7 @@ kraken2 \
 
 At this point you should know how to make a very basic
   sh script. To see my script I made for this see
-  20-myScript.sh.
+  21-myScript.sh.
 
 We will cover the steps needed to add seqById, flye, and
   medaka in future tutorials. We will also go over how to
