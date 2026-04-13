@@ -140,7 +140,9 @@ If you need to delete a file from a commit list you can do
   `git rm <file>`.
 
 If you need to remove a file from your commit list, but
-  not delete it you can use `git rm --cached <file>`.
+  not delete it you can use `git rm --cached <file>`. You
+  can use `git rm -r --cached` to remove all files from
+  your commit history.
 
 After setting up your commits you can push your updates
   using `git push` (your ssh key must be configured
