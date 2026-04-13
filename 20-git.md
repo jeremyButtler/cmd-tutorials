@@ -41,8 +41,17 @@ For ssh you can not use the url (starts with `https://`).
   Instead you need to do `git@<site>`.
 
 For github you need to make a new repository on the
-  webpage and then follow the instructions. For any
-  instruction that uses
+  github website. The website will list a set of
+  instructions for adding files to a blank repository.
+  The best way I found to clone the repository is to add
+  a license on creation. Then do
+  `git clone git@github.com:<username>/<repository_name>`.
+
+If you have a blank repository you follow the
+  instructions github provides. However, I have had mixed
+  results doing this.
+
+For any instruction that uses
   `https://github.com/<user_name/<repository_name>` change
   it to `git@github.com:<user_name>/<repository_name>`.
 
