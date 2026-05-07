@@ -14,8 +14,15 @@ Filter reads by some meteric.
 2. filtlong: keep best reads (ex: keep top 90% of reads)
    - Filtlong does not do a good job at read filtering,
      so I recomend to stay away from it
-3. fastqc: this is designed for Illumina reads (not ideal
-   for ONT) and is a GUI
+3. fastqc: this is designed for Illumina reads, but can
+   work for ONT
+   - I have not used this program, but have heard about it
+     from others
+   - it has a GUI and command line program
+   - Be aware that the mean quality scores for ONT are
+     calculated differently from Illumina
+     - For ONT the mean quality scores will look higher
+       then what they really are
 
 # fastq manipulation (beyond filtering):
 
