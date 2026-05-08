@@ -265,6 +265,17 @@ You need to find a model that fits your data before
    - [https://github.com/brettc/partitionfinder](
       https://github.com/brettc/partitionfinder)
 
+# Tree veiwers:
+
+These programs are used to view and edit trees. There are
+  many programs (most I do not know).
+
+1. figtree: java tree editor
+2. dendorscope: I do not have much experience here, but
+   it is used by many
+3. ggtree: this is a R package that allows you to edit a
+   tree using a R script (like plotting)
+
 # AMR detection:
 
 Detect AMRs in sequence data (often consensus). The only
