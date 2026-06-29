@@ -99,6 +99,7 @@ Tools for mapipulating the sam files from read mappers
      more options
    - [https://github.com/pezmaster31/bamtools](
       https://github.com/pezmaster31/bamtools)
+
 # Classification:
 
 Tools for classifying reads or modifying the output.
@@ -217,10 +218,10 @@ The phylogenetic software is often complex. So, you will
   need to read manuals to understand it.
 
 The flow for a tree is to align your sequences, then clean
-  up the alignment (some GUI programs: aliview, jalview,
-  bioedit, ect...). After that you need to use a model
-  selection tool to find the best model for your tree.
-  Then you can build your tree.
+  up the alignment (often removing gaps some GUI programs:
+  aliview, jalview, bioedit, ect...). After that you need
+  to use a model selection tool to find the best model for
+  your tree. Then you can build your tree.
 
 1. raxml: maximum liklihood
   - [https://github.com/amkozlov/raxml-ng](
@@ -247,6 +248,21 @@ The flow for a tree is to align your sequences, then clean
      step
    - [https://github.com/achtman-lab/GrapeTree](
       https://github.com/achtman-lab/GrapeTree)
+
+# Tree clean up:
+
+For trees, gaps (insertions and deletions) and anonymous
+  bases are not something that can be modeled easily. So,
+  often times these are not counted in the total
+  difference. To avoid this you will often remove
+  sequences with a lot of gaps or columns (positions) with
+  many gaps.
+
+1. trimal: can remove columns with a large number of gaps
+   - for example; to remove columns with over 10% gaps do
+     `trimal -gt 0.9 -in file.fasta > out.fasta`.
+   - (https://github.com/inab/trimal)[
+      https://github.com/inab/trimal]
 
 # Tree model selection
 
@@ -315,3 +331,26 @@ Some times you need to compare assemblies. Here I do not
   now much.
 
 1. quast or metaquast: is an assembly benchmarking tool
+
+# read simulators
+
+Sometimes for benchmarking you need data, but can not find
+  it. Read simulators are not the best tools, but allow
+  you to test or get some initial results for a benchmark.
+  You can then track down some real data.
+
+1. badRead: does an ok job, not the best, but also does
+   not need a lot to run. badread is the only read
+   simulator I have used.
+   - Input: a reference genome
+   - Output: is fastq file
+   - (https://github.com/rrwick/Badread)[
+      https://github.com/rrwick/Badread]
+2. NanoSimFormer: looks like a pod5 simulator, never have
+   used it.
+   - Input: reference genome or reads
+   - Output is pod5 files
+   - Requires: GPU (so slower)
+   - Allows: model training from reall reads
+   - (https://github.com/BioinfoSZU/NanoSimFormer)[
+      https://github.com/BioinfoSZU/NanoSimFormer]
